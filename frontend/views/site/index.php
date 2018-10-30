@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 use yii\helpers\Html;
 use yii\helpers\HtmlPurifier;
+use yii\widgets\ListView;
 
 
 $this->title = Yii:: $app->name;
@@ -19,33 +20,14 @@ $this->title = Yii:: $app->name;
    
 
 <div class ="row">
-    <div class ="col-md-9">
+    <div class ="col-md-9 text-center">
         <h1>New Products</h1>
         <div class ="row">
-            <?php foreach($products as $p) { ?>
 
-                <div class ="col-sm-6 col-md-4 text-center">
-                    <div class = "thumbnail">
-                        
-                       
-                           <img src="<?php echo Yii::getAlias('@web').'/'.$p->description;?>" class="card-mg-top">
-                    
-                        <div class="caption">
-                            <h3><?= Html::encode($p->name)?></h3>
-                            <p><?= HtmlPurifier::process($p->description)?></p>
-                            <p>
-                               
-                                 
-                             <?=Html::a('Add to de Cart',['cart/add','id' =>$p->id],['class'=> 'btn btn-sm btn-success'])?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <?php } ?>
-
-
-                
+            <?=ListView::widget([
+            'dataProvider' => $dataProviderProduct,
+            'itemView' => '_product',
+            ]) ?>
          </div>
     </div>
 
