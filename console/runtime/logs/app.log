@@ -1,0 +1,1857 @@
+2018-10-23 08:59:51 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1143): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#19 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1143): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-10-23 08:59:48 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540277988.9351
+    'REQUEST_TIME' => 1540277988
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 09:28:21 [-][-][-][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW) in C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_071118_create_profile.php:25
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m181023_071118_...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m181023_071118_...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_071118_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 09:28:17 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540279697.0564
+    'REQUEST_TIME' => 1540279697
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 09:29:02 [-][-][-][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW) in C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_071118_create_profile.php:25
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m181023_071118_...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m181023_071118_...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_071118_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 09:28:59 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540279739.7188
+    'REQUEST_TIME' => 1540279739
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 09:29:39 [-][-][-][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW) in C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_071118_create_profile.php:25
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m181023_071118_...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m181023_071118_...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_071118_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 09:29:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540279777.4128
+    'REQUEST_TIME' => 1540279777
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 09:30:47 [-][-][-][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW) in C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_071118_create_profile.php:25
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m181023_071118_...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m181023_071118_...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_071118_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 09:30:45 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540279845.9541
+    'REQUEST_TIME' => 1540279845
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 09:43:50 [-][-][-][error][ParseError] ParseError: syntax error, unexpected 'Null' (T_STRING), expecting ']' in C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_073954_create_category.php:18
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m181023_073954_...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m181023_073954_...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_073954_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 09:43:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540280627.4727
+    'REQUEST_TIME' => 1540280627
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 10:05:46 [-][-][-][error][ParseError] ParseError: syntax error, unexpected ''created_at'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php:22
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m181023_074633_...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m181023_074633_...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 10:05:43 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540281943.6973
+    'REQUEST_TIME' => 1540281943
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 10:08:27 [-][-][-][error][ParseError] ParseError: syntax error, unexpected ''created_at'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php:22
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m181023_074633_...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m181023_074633_...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 10:08:25 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540282105.6796
+    'REQUEST_TIME' => 1540282105
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 10:10:16 [-][-][-][error][ParseError] ParseError: syntax error, unexpected ''created_at'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php:22
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m181023_074633_...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m181023_074633_...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 10:10:14 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540282214.5783
+    'REQUEST_TIME' => 1540282214
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 10:11:10 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1166 Incorrect column name 'price ' in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Migration.php(323): yii\db\Command->execute()
+#3 C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php(24): yii\db\Migration->createTable('product', Array)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m181023_074633_create_product->Up()
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1166 Incorrect column name 'price '
+The SQL being executed was: CREATE TABLE `product` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`category_id` int(11) NOT NULL,
+	`name` varchar(255) NOT NULL,
+	`description` text NOT NULL,
+	`price ` int(11) NOT NULL,
+	`created_by` int(11) NOT NULL,
+	`created_at` int(11) NOT NULL,
+	`updated_by` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `p...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Migration.php(323): yii\db\Command->execute()
+#3 C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php(24): yii\db\Migration->createTable('product', Array)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m181023_074633_create_product->Up()
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1166
+    [2] => Incorrect column name 'price '
+)
+
+2018-10-23 10:11:08 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540282268.5305
+    'REQUEST_TIME' => 1540282268
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 10:12:10 [-][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: m181023_074633_create_product::addForeingKey() in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php(41): yii\base\Component->__call('addForeingKey', Array)
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m181023_074633_create_product->Up()
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 10:12:07 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540282326.9911
+    'REQUEST_TIME' => 1540282326
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 10:13:48 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'product' already exists in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Migration.php(323): yii\db\Command->execute()
+#3 C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php(24): yii\db\Migration->createTable('product', Array)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m181023_074633_create_product->Up()
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'product' already exists
+The SQL being executed was: CREATE TABLE `product` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`category_id` int(11) NOT NULL,
+	`name` varchar(255) NOT NULL,
+	`description` text NOT NULL,
+	`price` int(11) NOT NULL,
+	`created_by` int(11) NOT NULL,
+	`created_at` int(11) NOT NULL,
+	`updated_by` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `p...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Migration.php(323): yii\db\Command->execute()
+#3 C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php(24): yii\db\Migration->createTable('product', Array)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m181023_074633_create_product->Up()
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'product' already exists
+)
+
+2018-10-23 10:13:41 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540282421.873
+    'REQUEST_TIME' => 1540282421
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 10:15:35 [-][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: m181023_074633_create_product::addForeingKey() in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php(41): yii\base\Component->__call('addForeingKey', Array)
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m181023_074633_create_product->Up()
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 10:15:31 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540282531.9606
+    'REQUEST_TIME' => 1540282531
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 10:25:51 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'product' already exists in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Migration.php(323): yii\db\Command->execute()
+#3 C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php(24): yii\db\Migration->createTable('product', Array)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m181023_074633_create_product->Up()
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'product' already exists
+The SQL being executed was: CREATE TABLE `product` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`category_id` int(11) NOT NULL,
+	`name` varchar(255) NOT NULL,
+	`description` text NOT NULL,
+	`price` int(11) NOT NULL,
+	`created_by` int(11) NOT NULL,
+	`created_at` int(11) NOT NULL,
+	`updated_by` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `p...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Migration.php(323): yii\db\Command->execute()
+#3 C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php(24): yii\db\Migration->createTable('product', Array)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m181023_074633_create_product->Up()
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'product' already exists
+)
+
+2018-10-23 10:25:43 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540283143.1603
+    'REQUEST_TIME' => 1540283143
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 10:27:26 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'product' already exists in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Migration.php(323): yii\db\Command->execute()
+#3 C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php(24): yii\db\Migration->createTable('product', Array)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m181023_074633_create_product->Up()
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'product' already exists
+The SQL being executed was: CREATE TABLE `product` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`category_id` int(11) NOT NULL,
+	`name` varchar(255) NOT NULL,
+	`description` text NOT NULL,
+	`price` int(11) NOT NULL,
+	`created_by` int(11) NOT NULL,
+	`created_at` int(11) NOT NULL,
+	`updated_by` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `p...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\db\Migration.php(323): yii\db\Command->execute()
+#3 C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_074633_create_product.php(24): yii\db\Migration->createTable('product', Array)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(725): m181023_074633_create_product->Up()
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_074633_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#11 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#12 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#13 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'product' already exists
+)
+
+2018-10-23 10:27:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540283243.177
+    'REQUEST_TIME' => 1540283243
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 10:31:54 [-][-][-][error][ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC) in C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_083124_create_order.php:16
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m181023_083124_...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m181023_083124_...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_083124_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 10:31:52 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SESSIONNAME' => 'Console'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540283512.4432
+    'REQUEST_TIME' => 1540283512
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-23 18:31:14 [-][-][-][error][ParseError] ParseError: syntax error, unexpected '}' in C:\xampp\htdocs\yii2-ecommerce1\console\migrations\m181023_162407_add_amount_to_order_product.php:25
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\MigrateController.php(196): yii\console\controllers\BaseMigrateController->includeMigrationFile('m181023_162407_...')
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): yii\console\controllers\MigrateController->createMigration('m181023_162407_...')
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(199): yii\console\controllers\BaseMigrateController->migrateUp('m181023_162407_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#12 {main}
+2018-10-23 18:31:11 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540312271.3157
+    'REQUEST_TIME' => 1540312271
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-10-30 08:02:29 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "init". in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('init', Array)
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('init', Array)
+#2 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "init". in C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('init', Array)
+#1 C:\xampp\htdocs\yii2-ecommerce1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\yii2-ecommerce1\yii(23): yii\base\Application->run()
+#3 {main}
+2018-10-30 08:02:28 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Alex\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-QMR0O5CD'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Alex'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk-10.0.1'
+    'JAVA_HOMER' => 'C:\\Program Files\\Java\\jre-10.0.2'
+    'LOCALAPPDATA' => 'C:\\Users\\Alex\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-QMR0O5CD'
+    'M2_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MAVEN_HOME' => 'C:\\Program Files\\Apache\\apache-maven-3.5.4'
+    'MSMPI_BIN' => 'C:\\Program Files\\Microsoft MPI\\Bin\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Alex\\OneDrive'
+    'OnlineServices' => 'Online Services'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin;C:\\sonarqube\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\sonar-scanner\\bin;C:\\Program Files\\Java\\jdk-10.0.1\\bin\\java.exe;C:\\Program Files\\Java\\jre-10.0.2\\bin;C:\\Program Files\\PuTTY\\;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Alex\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Alex\\AppData\\Roaming\\npm;C:\\Users\\Alex\\AppData\\Local\\GitHubDesktop\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'platformcode' => 'KV'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\PowerShell\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.1.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'RegionCode' => 'LA'
+    'SC_HOME' => 'C:\\sonar-scanner'
+    'SQ_HOME' => 'C:\\sonarqube'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Alex\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-QMR0O5CD'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-QMR0O5CD'
+    'USERNAME' => 'Alex'
+    'USERPROFILE' => 'C:\\Users\\Alex'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1540882948.9546
+    'REQUEST_TIME' => 1540882948
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\yii2-ecommerce1\\yii'
+        1 => 'init'
+    ]
+    'argc' => 2
+]

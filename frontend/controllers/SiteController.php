@@ -76,7 +76,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(4);
+        $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(8)->all();
         $dataProviderProduct = new ActiveDataProvider([
             'query' => $products,
             'pagination'=> false
