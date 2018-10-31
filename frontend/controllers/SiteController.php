@@ -14,14 +14,14 @@ use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use common\models\product;
 use yii\data\ActiveDataProvider;
-use yii\web\UploadedFile;
-use app\model\products;
 
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
+
+    public $enableCarfValidation=false;
     /**
      * {@inheritdoc}
      */
@@ -76,13 +76,22 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+      
         $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(8);
-        $dataProviderProduct = new ActiveDataProvider([
-            'query' => $products,
-            'pagination'=> false
-        ]);
 
-        return $this->render('index',['dataProviderProduct' => $dataProviderProduct]);
+        $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(4);
+
+        $dataProviderProduct = new ActiveDataProvider([
+            'query' => $products
+        ]);
+        return $this->render('index',[
+            'dataProviderProduct' => $dataProviderProduct
+        ]);
+    }
+
+    public function actionCart()
+    {
+        
 
     }
 

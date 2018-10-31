@@ -1994,7 +1994,7 @@ Yii Framework 2 Change Log
 - Enh #2892: ActiveRecord dirty attributes are now reset after call to `afterSave()` so information about changed attributes is available in `afterSave`-event (cebe)
 - Enh #2910: Added `yii\base\Application::end()` (qiangxue)
 - Enh: Added support for using arrays as option values for console commands (qiangxue)
-- Enh: Added `favicon.ico` and `robots.txt` to default project templates (samdark)
+- Enh: Added `autopartes.png` and `robots.txt` to default project templates (samdark)
 - Enh: Added `yii\base\Widget::autoIdPrefix` to support prefixing automatically generated widget IDs (qiangxue)
 - Enh: Support for file aliases in console command 'message' (omnilight)
 - Enh: Sort and Pagination can now create absolute URLs (cebe)

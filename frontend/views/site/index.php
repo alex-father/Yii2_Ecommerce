@@ -9,26 +9,29 @@ use yii\widgets\ListView;
 $this->title = Yii:: $app->name;
 ?>
 
+<div align="center">
+<img src="autopartes.png" width="50%" height="50%">
+  
+        <h1>¡Bienvenido a AutoPartes!</h1>
+        <h3>De todo para tu automovil</h3>
 
-    <div class="jumbotron">
-        <h1>Welcome to Auto Parts!</h1>
-
-        <p class="lead">De todo para tu automovil</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Compra ya!</a></p>
-    </div>
-   
-
+        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Comprar</a></p>
+        
+<div align="center">
 <div class ="row">
+
     <div class ="col-md-50% text-center">
         <h1>New Products</h1>
-        <div class ="row">
 
+    <div class ="col-md-10 ">
+        <div class ="row">
             <?=ListView::widget([
             'dataProvider' => $dataProviderProduct,
             'itemView' => '_product',
             ]) ?>
          </div>
     </div>
+</div>
+</div>
 
 </div>

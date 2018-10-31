@@ -6,7 +6,7 @@ return [
          
     ],
 
-      'name' => 'Auto Partes',
+      'name' => 'AutoPartes',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
         'cache' => [

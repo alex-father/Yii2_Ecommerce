@@ -19,7 +19,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="http://127.0.0.1:8100/favicon.ico" />
+    <link rel="shortcut icon" href="http://127.0.0.1:8100/autopartes.png" />
   </head>
   <body>
 
