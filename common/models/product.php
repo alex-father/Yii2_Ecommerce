@@ -41,9 +41,10 @@ class product extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['category_id', 'name', 'description', 'price', 'created_by', 'created_at', 'updated_by', 'updated_at'], 'required'],
+            [['category_id', 'name','image', 'price','description', 'created_by', 'created_at', 'updated_by', 'updated_at'], 'required'],
             [['category_id', 'price', 'created_by', 'created_at', 'updated_by', 'updated_at'], 'integer'],
             [['description'], 'string'],
+            [['image'], 'text'],
             [['name'], 'string', 'max' => 255],
             [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => Category::className(), 'targetAttribute' => ['category_id' => 'id']],
             [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['created_by' => 'id']],
@@ -60,8 +61,9 @@ class product extends \yii\db\ActiveRecord
             'id' => 'ID',
             'category_id' => 'Category ID',
             'name' => 'Name',
-            'description' => 'Description',
+            'image' => 'image',
             'price' => 'Price',
+            'description' => 'Description',
             'created_by' => 'Created By',
             'created_at' => 'Created At',
             'updated_by' => 'Updated By',

@@ -20,7 +20,7 @@ $this->title = Yii:: $app->name;
    
 
 <div class ="row">
-    <div class ="col-md-9 text-center">
+    <div class ="col-md-50% text-center">
         <h1>New Products</h1>
         <div class ="row">
 
