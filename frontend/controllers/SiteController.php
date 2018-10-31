@@ -14,8 +14,6 @@ use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use common\models\product;
 use yii\data\ActiveDataProvider;
-use yii\web\UploadedFile;
-use app\model\products;
 
 /**
  * Site controller
@@ -76,14 +74,13 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(8)->all();
+        $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(4);
         $dataProviderProduct = new ActiveDataProvider([
-            'query' => $products,
-            'pagination'=> false
+            'query' => $products
         ]);
-
-        return $this->render('index',['dataProviderProduct' => $dataProviderProduct]);
-
+        return $this->render('index',[
+            'dataProviderProduct' => $dataProviderProduct
+        ]);
     }
 
     /**
