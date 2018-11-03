@@ -74,12 +74,13 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
+        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?> | Powered by <a target="_blank" href="https://www.facebook.com">ZOOM, Inc.</a></p>
         <div align="right">
         <a href="../web/index.php">
             <img src="autopartes.png" width="5%" height="5%">
         </a>
         </div>
+
     </div>
 </footer>
 
