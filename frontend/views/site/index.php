@@ -12,26 +12,27 @@ $this->title = Yii:: $app->name;
 <div align="center">
 <img src="autopartes.png" width="50%" height="50%">
   
-        <h1>¡Bienvenido a AutoPartes!</h1>
-        <h3>De todo para tu automovil</h3>
+        <h2>¡Bienvenido a AutoPartes!</h2>
+        <p>De todo para tu automovil</p>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Comprar</a></p>
-        
-<div align="center">
+        <p><a class="btn btn-lg btn-success" href="" data-toggle="tooltip" title="Comprar">Comprar</a></p>
 
 
     <div class ="col-md-50% text-center">
-        <h1>Nuevos productos</h1>
-
-    <div class ="col-md-11 ">
+        <h1>Nuestros productos</h1>
+<div class="container">
+    <div align=" center">
+    <div class ="col-md-11">
         <div class ="row">
+            
             <?=ListView::widget([
             'dataProvider' => $dataProviderProduct,
             'itemView' => '_product',
             ]) ?>
+
          </div>
     </div>
 </div>
-
-
+</div>
+</div>
 </div>

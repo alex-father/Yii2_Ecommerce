@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= Html::a('¿Olvidaste la contraseña?', ['site/request-password-reset']) ?>.
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" data-toggle="tooltip" title="Inicio de sesión">
                     <?= Html::submitButton('Iniciar sesión', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
                 </div>
 

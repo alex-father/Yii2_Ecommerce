@@ -25,6 +25,7 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
+
 <?php $this->beginBody() ?>
 
 <div class="wrap">
@@ -74,11 +75,11 @@ AppAsset::register($this);
 <footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
-    <a href="../web/index.php">
-    <div align="center">
-    <img src="autopartes.png" width="5%" height="5%">
-    </a>
-    </div>
+        <div align="right">
+        <a href="../web/index.php">
+            <img src="autopartes.png" width="5%" height="5%">
+        </a>
+        </div>
     </div>
 </footer>
 
