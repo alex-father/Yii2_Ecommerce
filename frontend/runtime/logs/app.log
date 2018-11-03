@@ -15690,3 +15690,2328 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1541231439.738
     'REQUEST_TIME' => 1541231439
 ]
+2018-11-03 21:41:56 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "shop/product/detail". in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('shop/product/de...', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 21:41:56 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'shop/product/detail'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '51956'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=shop%2Fproduct%2Fdetail&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=shop%2Fproduct%2Fdetail&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541277716.448
+    'REQUEST_TIME' => 1541277716
+]
+2018-11-03 21:48:16 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "shop/product/detail". in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('shop/product/de...', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 21:48:16 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'shop/product/detail'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52015'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=shop%2Fproduct%2Fdetail&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=shop%2Fproduct%2Fdetail&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541278096.25
+    'REQUEST_TIME' => 1541278096
+]
+2018-11-03 21:52:30 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modal in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('modal', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modal', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 21:52:30 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/modal'
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52055'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fmodal&id=4'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fmodal&id=4'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541278349.985
+    'REQUEST_TIME' => 1541278349
+]
+2018-11-03 21:55:28 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modal in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('modal', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modal', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 21:55:28 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/modal'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52092'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fmodal&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fmodal&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541278528.378
+    'REQUEST_TIME' => 1541278528
+]
+2018-11-03 21:55:43 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modal in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('modal', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modal', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 21:55:43 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/modal'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52094'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fmodal&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fmodal&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541278543.378
+    'REQUEST_TIME' => 1541278543
+]
+2018-11-03 21:56:32 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modal in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('modal', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modal', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 21:56:32 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/modal'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fmodal&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fmodal&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541278592.183
+    'REQUEST_TIME' => 1541278592
+]
+2018-11-03 21:56:39 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modal in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('modal', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modal', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 21:56:39 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/modal'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fmodal&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fmodal&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541278599.191
+    'REQUEST_TIME' => 1541278599
+]
+2018-11-03 21:57:51 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modal in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('modal', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modal', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 21:57:51 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/modal'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fmodal&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fmodal&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541278671.907
+    'REQUEST_TIME' => 1541278671
+]
+2018-11-03 22:06:25 [::1][-][uqbhnt4pf599qgj5gmac6906ts][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modal in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('modal', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modal', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 22:06:25 [::1][-][uqbhnt4pf599qgj5gmac6906ts][info][application] $_GET = [
+    'r' => 'site/modal'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'uqbhnt4pf599qgj5gmac6906ts'
+    '_csrf-frontend' => '64400c90cce759d5bfd2ebb40837ffbcc73b2cd6c25243bb8eb11d0fe92ea3b4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Xf3sw7hzAcmTu0IoqEpW9T_bZQoxX2zF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=uqbhnt4pf599qgj5gmac6906ts; _csrf-frontend=64400c90cce759d5bfd2ebb40837ffbcc73b2cd6c25243bb8eb11d0fe92ea3b4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Xf3sw7hzAcmTu0IoqEpW9T_bZQoxX2zF%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52372'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fmodal&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fmodal&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541279185.238
+    'REQUEST_TIME' => 1541279185
+]
+2018-11-03 22:29:57 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php:99
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php(99): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php(214): yii\helpers\BaseUrl::toRoute(Array, false)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseHtml.php(412): yii\helpers\BaseUrl::to(Array)
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\_product.php(20): yii\helpers\BaseHtml::a('Carrito', Array)
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(191): yii\base\View->render('_product', Array)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(124): yii\widgets\ListView->renderItem(Object(common\models\product), 6, 0)
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\widgets\ListView->renderItems()
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\widgets\BaseListView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Widget.php(140): yii\widgets\BaseListView->run()
+#14 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\index.php(30): yii\base\Widget::widget(Array)
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#18 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#19 C:\xampp\htdocs\ProyectoAnalisis2\frontend\controllers\SiteController.php(88): yii\base\Controller->render('index', Array)
+#20 [internal function]: frontend\controllers\SiteController->actionIndex()
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#25 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2018-11-03 22:29:57 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fmodal&id=6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52613'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541280597.379
+    'REQUEST_TIME' => 1541280597
+]
+2018-11-03 22:30:08 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseHtml.php:151
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseHtml.php(151): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\\xampp\\htdocs...', 151, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseHtml.php(415): yii\helpers\BaseHtml::tag('a', Array, Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\_product.php(20): yii\helpers\BaseHtml::a(Array)
+#3 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(191): yii\base\View->render('_product', Array)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(124): yii\widgets\ListView->renderItem(Object(common\models\product), 6, 0)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\widgets\ListView->renderItems()
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\widgets\BaseListView->renderSection('{items}')
+#10 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#11 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Widget.php(140): yii\widgets\BaseListView->run()
+#13 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\index.php(30): yii\base\Widget::widget(Array)
+#14 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#18 C:\xampp\htdocs\ProyectoAnalisis2\frontend\controllers\SiteController.php(88): yii\base\Controller->render('index', Array)
+#19 [internal function]: frontend\controllers\SiteController->actionIndex()
+#20 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#26 {main}
+2018-11-03 22:30:08 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fmodal&id=6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52616'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541280608.088
+    'REQUEST_TIME' => 1541280608
+]
+2018-11-03 22:47:47 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/data-toggle="modal" in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('data-toggle="mo...', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/data-toggl...', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 22:47:47 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/data-toggle=\"modal\"'
+    1 => 'data-target=\"#myModal\"'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52793'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fdata-toggle%3D%22modal%22&1=data-target%3D%22%23myModal%22&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fdata-toggle%3D%22modal%22&1=data-target%3D%22%23myModal%22&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541281667.184
+    'REQUEST_TIME' => 1541281667
+]
+2018-11-03 22:48:17 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/data-target="#myModal" in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('data-target="#m...', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/data-targe...', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 22:48:17 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/data-target=\"#myModal\"'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fdata-target%3D%22%23myModal%22&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fdata-target%3D%22%23myModal%22&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541281697.125
+    'REQUEST_TIME' => 1541281697
+]
+2018-11-03 22:48:30 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/#myModal in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('#myModal', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/#myModal', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-03 22:48:30 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/#myModal'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52837'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2F%23myModal&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2F%23myModal&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541281710.283
+    'REQUEST_TIME' => 1541281710
+]
+2018-11-03 22:58:13 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php:99
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php(99): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php(214): yii\helpers\BaseUrl::toRoute(Array, false)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseHtml.php(412): yii\helpers\BaseUrl::to(Array)
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\_product.php(21): yii\helpers\BaseHtml::a('<i class="fas f...', Array, Array)
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(191): yii\base\View->render('_product', Array)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(124): yii\widgets\ListView->renderItem(Object(common\models\product), 6, 0)
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\widgets\ListView->renderItems()
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\widgets\BaseListView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Widget.php(140): yii\widgets\BaseListView->run()
+#14 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\index.php(30): yii\base\Widget::widget(Array)
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#18 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#19 C:\xampp\htdocs\ProyectoAnalisis2\frontend\controllers\SiteController.php(88): yii\base\Controller->render('index', Array)
+#20 [internal function]: frontend\controllers\SiteController->actionIndex()
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#25 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2018-11-03 22:58:13 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/index'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52953'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541282293.731
+    'REQUEST_TIME' => 1541282293
+]
+2018-11-03 22:58:41 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php:99
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php(99): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php(214): yii\helpers\BaseUrl::toRoute(Array, false)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseHtml.php(412): yii\helpers\BaseUrl::to(Array)
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\_product.php(21): yii\helpers\BaseHtml::a('<i class="fas f...', Array, Array, Array)
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(191): yii\base\View->render('_product', Array)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(124): yii\widgets\ListView->renderItem(Object(common\models\product), 6, 0)
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\widgets\ListView->renderItems()
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\widgets\BaseListView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Widget.php(140): yii\widgets\BaseListView->run()
+#14 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\index.php(30): yii\base\Widget::widget(Array)
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#18 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#19 C:\xampp\htdocs\ProyectoAnalisis2\frontend\controllers\SiteController.php(88): yii\base\Controller->render('index', Array)
+#20 [internal function]: frontend\controllers\SiteController->actionIndex()
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#25 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2018-11-03 22:58:41 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/index'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52957'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541282321.688
+    'REQUEST_TIME' => 1541282321
+]
+2018-11-03 22:58:52 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php:99
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php(99): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseUrl.php(214): yii\helpers\BaseUrl::toRoute(Array, false)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\helpers\BaseHtml.php(412): yii\helpers\BaseUrl::to(Array)
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\_product.php(21): yii\helpers\BaseHtml::a('<i class="fas f...', Array, Array)
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(191): yii\base\View->render('_product', Array)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(124): yii\widgets\ListView->renderItem(Object(common\models\product), 6, 0)
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\widgets\ListView->renderItems()
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\widgets\BaseListView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Widget.php(140): yii\widgets\BaseListView->run()
+#14 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\index.php(30): yii\base\Widget::widget(Array)
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#18 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#19 C:\xampp\htdocs\ProyectoAnalisis2\frontend\controllers\SiteController.php(88): yii\base\Controller->render('index', Array)
+#20 [internal function]: frontend\controllers\SiteController->actionIndex()
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#25 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2018-11-03 22:58:52 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/index'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52961'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541282332.619
+    'REQUEST_TIME' => 1541282332
+]
+2018-11-03 22:59:15 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][error][ParseError] ParseError: syntax error, unexpected 'id' (T_STRING), expecting ']' in C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\_product.php:21
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(191): yii\base\View->render('_product', Array)
+#3 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\ListView.php(124): yii\widgets\ListView->renderItem(Object(common\models\product), 6, 0)
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\widgets\ListView->renderItems()
+#5 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\widgets\BaseListView->renderSection('{items}')
+#6 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Widget.php(140): yii\widgets\BaseListView->run()
+#9 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\site\index.php(30): yii\base\Widget::widget(Array)
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#14 C:\xampp\htdocs\ProyectoAnalisis2\frontend\controllers\SiteController.php(88): yii\base\Controller->render('index', Array)
+#15 [internal function]: frontend\controllers\SiteController->actionIndex()
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#19 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#20 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2018-11-03 22:59:14 [::1][-][e74u1gbupg6r0t6lvboct4ojcc][info][application] $_GET = [
+    'r' => 'site/index'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'e74u1gbupg6r0t6lvboct4ojcc'
+    '_csrf-frontend' => 'dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=e74u1gbupg6r0t6lvboct4ojcc; _csrf-frontend=dd0b405a7de9f65782e4aeefbbb5a96ed554445303347ef7e9fce24846b502cba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KTEVZQKp_mpO5dZLYcPLTb4bJdn6QRxu%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '52964'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541282354.878
+    'REQUEST_TIME' => 1541282354
+]
+2018-11-04 00:04:57 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist: C:/xampp/htdocs/ProyectoAnalisis2/assets in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\AssetManager.php:213
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\BaseObject->__construct(Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('assetManager', true)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(608): yii\base\Module->get('assetManager')
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\View.php(285): yii\web\View->getAssetManager()
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('frontend\\assets...')
+#11 C:\xampp\htdocs\ProyectoAnalisis2\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(336): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('\r\n<div align="c...')
+#16 C:\xampp\htdocs\ProyectoAnalisis2\frontend\controllers\SiteController.php(88): yii\base\Controller->render('index', Array)
+#17 [internal function]: frontend\controllers\SiteController->actionIndex()
+#18 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#24 C:\xampp\htdocs\ProyectoAnalisis2\index.php(5): require('C:\\xampp\\htdocs...')
+#25 {main}
+2018-11-04 00:04:52 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/index.php'
+    'REMOTE_PORT' => '50346'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ProyectoAnalisis2/'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/index.php'
+    'REQUEST_TIME_FLOAT' => 1541286292.596
+    'REQUEST_TIME' => 1541286292
+]
+2018-11-04 00:05:26 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: session_name(): Cannot change session name when headers already sent in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php:326
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'session_name():...', 'C:\\xampp\\htdocs...', 326, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php(326): session_name('advanced-fronte...')
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(180): yii\web\Session->setName('advanced-fronte...')
+#3 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\Component->__set('name', 'advanced-fronte...')
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\web\Session), Array)
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\Session', Array, Array)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\Session', Array, Array)
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('session', true)
+#11 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(178): yii\base\Module->get('session')
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(682): yii\web\Application->getSession()
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#14 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#18 [internal function]: yii\base\BaseObject->__construct(Array)
+#19 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#20 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#25 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#26 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#27 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#28 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#29 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#30 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#31 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#32 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#33 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#34 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#35 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#36 C:\xampp\htdocs\ProyectoAnalisis2\index.php(7): yii\base\Application->__construct(Array)
+#37 {main}
+2018-11-04 00:05:23 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/index.php'
+    'REMOTE_PORT' => '50350'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/ProyectoAnalisis2/'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/index.php'
+    'REQUEST_TIME_FLOAT' => 1541286323.251
+    'REQUEST_TIME' => 1541286323
+]
+2018-11-04 00:07:15 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: session_name(): Cannot change session name when headers already sent in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php:326
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'session_name():...', 'C:\\xampp\\htdocs...', 326, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php(326): session_name('advanced-fronte...')
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(180): yii\web\Session->setName('advanced-fronte...')
+#3 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\Component->__set('name', 'advanced-fronte...')
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\web\Session), Array)
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\Session', Array, Array)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\Session', Array, Array)
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('session', true)
+#11 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(178): yii\base\Module->get('session')
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(682): yii\web\Application->getSession()
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#14 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#18 [internal function]: yii\base\BaseObject->__construct(Array)
+#19 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#20 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#25 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#26 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#27 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#28 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#29 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#30 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#31 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#32 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#33 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#34 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#35 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#36 C:\xampp\htdocs\ProyectoAnalisis2\index.php(7): yii\base\Application->__construct(Array)
+#37 {main}
+2018-11-04 00:07:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '26okllb76tc6971t320aadplna'
+    '_csrf-frontend' => '58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=26okllb76tc6971t320aadplna; _csrf-frontend=58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/index.php'
+    'REMOTE_PORT' => '50391'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/ProyectoAnalisis2/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/index.php'
+    'REQUEST_TIME_FLOAT' => 1541286435.004
+    'REQUEST_TIME' => 1541286435
+]
+2018-11-04 00:07:22 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: session_name(): Cannot change session name when headers already sent in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php:326
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'session_name():...', 'C:\\xampp\\htdocs...', 326, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php(326): session_name('advanced-fronte...')
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(180): yii\web\Session->setName('advanced-fronte...')
+#3 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\Component->__set('name', 'advanced-fronte...')
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\web\Session), Array)
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\Session', Array, Array)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\Session', Array, Array)
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('session', true)
+#11 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(178): yii\base\Module->get('session')
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(682): yii\web\Application->getSession()
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#14 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#18 [internal function]: yii\base\BaseObject->__construct(Array)
+#19 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#20 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#25 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#26 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#27 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#28 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#29 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#30 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#31 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#32 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#33 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#34 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#35 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#36 C:\xampp\htdocs\ProyectoAnalisis2\index.php(7): yii\base\Application->__construct(Array)
+#37 {main}
+2018-11-04 00:07:16 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '26okllb76tc6971t320aadplna'
+    '_csrf-frontend' => '58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'napznh'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/index.php?r=site%2Fabout'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=26okllb76tc6971t320aadplna; _csrf-frontend=58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/index.php'
+    'REMOTE_PORT' => '50391'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/ProyectoAnalisis2/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/index.php'
+    'REQUEST_TIME_FLOAT' => 1541286436.956
+    'REQUEST_TIME' => 1541286436
+]
+2018-11-04 00:07:28 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: session_name(): Cannot change session name when headers already sent in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php:326
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'session_name():...', 'C:\\xampp\\htdocs...', 326, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php(326): session_name('advanced-fronte...')
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(180): yii\web\Session->setName('advanced-fronte...')
+#3 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\Component->__set('name', 'advanced-fronte...')
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\web\Session), Array)
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\Session', Array, Array)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\Session', Array, Array)
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('session', true)
+#11 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(178): yii\base\Module->get('session')
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(682): yii\web\Application->getSession()
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#14 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#18 [internal function]: yii\base\BaseObject->__construct(Array)
+#19 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#20 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#25 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#26 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#27 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#28 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#29 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#30 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#31 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#32 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#33 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#34 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#35 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#36 C:\xampp\htdocs\ProyectoAnalisis2\index.php(7): yii\base\Application->__construct(Array)
+#37 {main}
+2018-11-04 00:07:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '26okllb76tc6971t320aadplna'
+    '_csrf-frontend' => '58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'napznh'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/index.php?r=site%2Fcontact'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=26okllb76tc6971t320aadplna; _csrf-frontend=58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/index.php'
+    'REMOTE_PORT' => '50391'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/ProyectoAnalisis2/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/index.php'
+    'REQUEST_TIME_FLOAT' => 1541286443.767
+    'REQUEST_TIME' => 1541286443
+]
+2018-11-04 00:07:28 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: session_name(): Cannot change session name when headers already sent in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php:326
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'session_name():...', 'C:\\xampp\\htdocs...', 326, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php(326): session_name('advanced-fronte...')
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(180): yii\web\Session->setName('advanced-fronte...')
+#3 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\Component->__set('name', 'advanced-fronte...')
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\web\Session), Array)
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\Session', Array, Array)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\Session', Array, Array)
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('session', true)
+#11 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(178): yii\base\Module->get('session')
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(682): yii\web\Application->getSession()
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#14 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#18 [internal function]: yii\base\BaseObject->__construct(Array)
+#19 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#20 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#25 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#26 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#27 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#28 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#29 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#30 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#31 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#32 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#33 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#34 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#35 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#36 C:\xampp\htdocs\ProyectoAnalisis2\index.php(7): yii\base\Application->__construct(Array)
+#37 {main}
+2018-11-04 00:07:25 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '26okllb76tc6971t320aadplna'
+    '_csrf-frontend' => '58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'napznh'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/index.php?r=site%2Fcontact'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=26okllb76tc6971t320aadplna; _csrf-frontend=58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/index.php'
+    'REMOTE_PORT' => '50397'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/ProyectoAnalisis2/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/index.php'
+    'REQUEST_TIME_FLOAT' => 1541286445.06
+    'REQUEST_TIME' => 1541286445
+]
+2018-11-04 00:07:28 [::1][-][-][warning][yii\web\Session::init] Session is already started
+2018-11-04 00:07:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/captcha'
+    'v' => '5bde2a2a24ffe4.09703224'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '26okllb76tc6971t320aadplna'
+    '_csrf-frontend' => '58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'napznh'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/index.php?r=site%2Fcontact'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=26okllb76tc6971t320aadplna; _csrf-frontend=58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/index.php'
+    'REMOTE_PORT' => '50396'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcaptcha&v=5bde2a2a24ffe4.09703224'
+    'REQUEST_URI' => '/ProyectoAnalisis2/index.php?r=site%2Fcaptcha&v=5bde2a2a24ffe4.09703224'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/index.php'
+    'REQUEST_TIME_FLOAT' => 1541286442.247
+    'REQUEST_TIME' => 1541286442
+]
+2018-11-04 00:07:28 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: session_name(): Cannot change session name when headers already sent in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php:326
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'session_name():...', 'C:\\xampp\\htdocs...', 326, Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Session.php(326): session_name('advanced-fronte...')
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(180): yii\web\Session->setName('advanced-fronte...')
+#3 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\Component->__set('name', 'advanced-fronte...')
+#4 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\web\Session), Array)
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\Session', Array, Array)
+#8 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\Session', Array, Array)
+#9 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('session', true)
+#11 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(178): yii\base\Module->get('session')
+#12 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(682): yii\web\Application->getSession()
+#13 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#14 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\User.php(360): yii\web\User->getIdentity()
+#15 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#16 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\panels\UserPanel.php(81): yii\base\Component->__get('isGuest')
+#17 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#18 [internal function]: yii\base\BaseObject->__construct(Array)
+#19 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#20 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#21 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#22 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(177): yii\BaseYii::createObject(Array)
+#23 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2-debug\Module.php(149): yii\debug\Module->initPanels()
+#24 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#25 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#26 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#27 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#28 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#29 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#30 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#31 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(315): yii\base\Module->getModule('debug')
+#32 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#33 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#34 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#35 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#36 C:\xampp\htdocs\ProyectoAnalisis2\index.php(7): yii\base\Application->__construct(Array)
+#37 {main}
+2018-11-04 00:07:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '26okllb76tc6971t320aadplna'
+    '_csrf-frontend' => '58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'napznh'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/index.php?r=site%2Fcontact'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=26okllb76tc6971t320aadplna; _csrf-frontend=58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/index.php'
+    'REMOTE_PORT' => '50398'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/ProyectoAnalisis2/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/index.php'
+    'REQUEST_TIME_FLOAT' => 1541286446.883
+    'REQUEST_TIME' => 1541286446
+]
+2018-11-04 00:55:03 [::1][-][26okllb76tc6971t320aadplna][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/modal in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('modal', Array)
+#1 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/modal', Array)
+#2 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoAnalisis2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ProyectoAnalisis2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-11-04 00:55:03 [::1][-][26okllb76tc6971t320aadplna][info][application] $_GET = [
+    'r' => 'site/modal'
+    'id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '26okllb76tc6971t320aadplna'
+    '_csrf-frontend' => '58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'napznh'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/ProyectoAnalisis2/frontend/web/index.php?r=site%2Findex&id=3'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'advanced-frontend=26okllb76tc6971t320aadplna; _csrf-frontend=58df7e1d29598f78484cbe02de332fa52e9201ac0863c6e0983af8dc2c977823a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22gTrchyw0AmHT1qsuTGBaDPqIvIuVXL4h%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Users\\giron\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giron\\AppData\\Roaming\\npm;C:\\Users\\giron\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ProyectoAnalisis2/frontend/web/index.php'
+    'REMOTE_PORT' => '50973'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fmodal&id=6'
+    'REQUEST_URI' => '/ProyectoAnalisis2/frontend/web/index.php?r=site%2Fmodal&id=6'
+    'SCRIPT_NAME' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'PHP_SELF' => '/ProyectoAnalisis2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1541289303.868
+    'REQUEST_TIME' => 1541289303
+]
