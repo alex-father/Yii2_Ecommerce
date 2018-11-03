@@ -18,12 +18,12 @@ $this->title = Yii:: $app->name;
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Comprar</a></p>
         
 <div align="center">
-<div class ="row">
+
 
     <div class ="col-md-50% text-center">
-        <h1>New Products</h1>
+        <h1>Nuevos productos</h1>
 
-    <div class ="col-md-10 ">
+    <div class ="col-md-11 ">
         <div class ="row">
             <?=ListView::widget([
             'dataProvider' => $dataProviderProduct,
@@ -32,6 +32,6 @@ $this->title = Yii:: $app->name;
          </div>
     </div>
 </div>
-</div>
+
 
 </div>
