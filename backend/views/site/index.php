@@ -1,18 +1,19 @@
 <?php
 
 /* @var $this yii\web\View */
+use yii\helpers\Html;
+use yii\helpers\HtmlPurifier;
+use yii\widgets\ListView;
 
-$this->title = 'My Yii Application';
+$this->title = Yii:: $app->name;
 ?>
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
+    <div align="center">
+        <img src="autopartes.png" width="50%" height="50%">
+        <h2>Sistema de Administracion de AutoPartes</h2>
+        <p>Agencia Guastatoya</p>
+        </div>
 
     <div class="body-content">
 
@@ -25,7 +26,7 @@ $this->title = 'My Yii Application';
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Heading</h2>

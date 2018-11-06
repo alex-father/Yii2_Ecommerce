@@ -6,6 +6,13 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
+use yii\base\InvalidParamException;
+use yii\web\BadRequestHttpException;
+
+use backend\models\ContactForm;
+use common\models\product;
+use yii\data\ActiveDataProvider;
+
 
 /**
  * Site controller
@@ -58,9 +65,29 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
+    /*public function actionIndex()
     {
         return $this->render('index');
+    }*/
+
+    /**
+     * Displays homepage.
+     *
+     * @return mixed
+     */
+    public function actionIndex()
+    {
+      
+        $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(8);
+
+        $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(4);
+
+        $dataProviderProduct = new ActiveDataProvider([
+            'query' => $products
+        ]);
+        return $this->render('index',[
+            'dataProviderProduct' => $dataProviderProduct
+        ]);
     }
 
     /**
@@ -96,5 +123,15 @@ class SiteController extends Controller
         Yii::$app->user->logout();
 
         return $this->goHome();
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionEmployee()
+    {
+        return $this->render('employee');
     }
 }

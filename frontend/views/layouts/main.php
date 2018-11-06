@@ -27,7 +27,7 @@ AppAsset::register($this);
 
 <div class="wrap">
         
-        <?php
+    <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
