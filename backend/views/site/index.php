@@ -10,9 +10,8 @@ $this->title = Yii:: $app->name;
 <div class="site-index">
 
     <div align="center">
-        <img src="autopartes.png" width="50%" height="50%">
         <h2>Sistema de Administracion de AutoPartes</h2>
-        <p>Agencia Guastatoya</p>
+        <h4>Agencia Guastatoya</h4>
         </div>
 
     <div class="body-content">
