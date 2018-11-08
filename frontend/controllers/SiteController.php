@@ -15,6 +15,8 @@ use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 
 use common\models\product;
+use common\models\User;
+
 use yii\data\ActiveDataProvider;
 
 /**
@@ -81,13 +83,21 @@ class SiteController extends Controller
       
         $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(8);
 
-        $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(4);
+        $products = Product::find()->orderBy(['id'=> SORT_DESC])->limit(5);
 
+        
         $dataProviderProduct = new ActiveDataProvider([
             'query' => $products
         ]);
         return $this->render('index',[
             'dataProviderProduct' => $dataProviderProduct
+        ]);
+
+        $dataProviderUser = new ActiveDataProvider([
+            'query' => $user
+        ]);
+        return $this->render('index',[
+            'dataProviderUser' => $dataProviderUser
         ]);
     }
 

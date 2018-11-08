@@ -17,9 +17,7 @@ $this->title = Yii:: $app->name;
             <h2>Q.<?=$model->price?></h2>
             <p>
             <?=Html::a('<i class="fas fa-shopping-cart"></i> Carrito',['/site/cart','id' =>$model->id],['class'=> 'btn btn-sm btn-success'])?>
-
-            
-           
+          
            <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#myModal"><i class="fas fa-search"></i> Detalles</button>
             
             <div class="modal fade" id="myModal" role="dialog">
