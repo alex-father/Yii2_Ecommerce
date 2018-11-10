@@ -29,6 +29,7 @@ $this->title = Yii:: $app->name;
                         </div>
                         <div class="modal-body">
                             <p><?= HtmlPurifier::process($model->description)?></p>
+                            <img src="<?php echo Yii::getAlias('@web').'/'.$model->image ?>" class="card-mg-top">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
